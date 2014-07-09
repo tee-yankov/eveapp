@@ -1,0 +1,20 @@
+[
+    {"image" : "./img/zail_256.jpg",
+    "name" : "Zail Kring",
+    "corp" : "Independant Praetorian Corp",
+    "skillPoints" : 11672930,
+    "ship" : "Ragnarok",
+    "balance": 110234534},
+    {"image" : "./img/rykki_256.jpg",
+    "name" : "Rykki Atruin",
+    "corp" : "Independant Praetorian Corp",
+    "skillPoints" : 132345454,
+    "ship" : "Loki",
+    "balance" : 323434234435},
+    {"image" : "http://image.eveonline.com/Character/94655543_256.jpg",
+    "name" : "Nathan Rolk",
+    "corp" : "Independant Praetorian Corp",
+    "skillPoints" : 3243424,
+    "ship" : "Mackinaw",
+    "balance" : 2323423254}
+]

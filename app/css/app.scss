@@ -21,6 +21,17 @@ body {
 	z-index: 1;
 	left: 0;
 	right: 0;
+	.icon {
+		display: block;
+		background: url('../img/favicon.svg') center;
+		background-size: 48px;
+		position: fixed;
+		top: 6px;
+		left: 16px;
+		z-index: 2;
+		height: 48px;
+		width: 48px;
+	}
 	.nav-wrapper {
 		display: block;
 		height: 64 + 18 * 1px;
@@ -40,7 +51,7 @@ body {
 			width: 100%;
 			color: #fff;
 			overflow: hidden;
-			font-weight: 400;
+			font-weight: 300;
 			margin: 0 auto;
 			white-space: nowrap;
 		}
@@ -55,9 +66,11 @@ body {
 	}
 }
 
+
 .profile {
 	border: 2px #333 solid;
 	margin-top: 1em;
+	margin-bottom: 1em;
 	padding: 1em;
 	.profileImg {
 		border: 1px #333 solid;

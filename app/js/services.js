@@ -5,7 +5,7 @@
 
 // Demonstrate how to register services
 // In this case it is a simple value service.
-angular.module('myApp.services', [])
-  .factory('apiData', function(){
-  	return {information: []};
-  });
+angular.module('myApp.services', []).
+	service('noService', [function(){
+
+	}]);

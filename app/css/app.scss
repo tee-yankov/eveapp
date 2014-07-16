@@ -64,24 +64,40 @@ body {
 	.form-control {
 		margin-bottom: 1em;
 	}
+	.btn-group-wrap {
+		text-align: center;
+	}
 }
 
-
-.profile {
-	border: 2px #333 solid;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	padding: 1em;
-	.profileImg {
-		border: 1px #333 solid;
-		width: 8em;
-		height: 10em;
+.panel {
+	margin: 1em auto;
+	.thumbnail {
+		width: 256/1.66 * 1px;
+		height: 256/1.5 * 1px;
 		float: left;
 		margin-right: 1em;
-		background-color: $dark;
 	}
 	.information {
-		position: relative;
-		display: block;
+		line-height: 26px;
 	}
 }
+
+
+// .profile {
+// 	border: 2px $dark solid;
+// 	margin-top: 1em;
+// 	margin-bottom: 1em;
+// 	padding: 1em;
+// 	.profileImg {
+// 		border: 1px $dark solid;
+// 		width: 8em;
+// 		height: 10em;
+// 		float: left;
+// 		margin-right: 1em;
+// 		background-color: $dark;
+// 	}
+// 	.information {
+// 		position: relative;
+// 		display: block;
+// 	}
+// }

@@ -12,8 +12,8 @@ angular.module('myApp.filters', []).
 	  	return function(data, storage) {
 	  		for (var index in storage) {
 	  			if(storage[index].characterID == data.characterID)
-	  				return true;
+	  				return index;
 	  		}
-	  		return false;
+	  		return -1;
 	  	};
 	});

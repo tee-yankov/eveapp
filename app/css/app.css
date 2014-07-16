@@ -63,22 +63,19 @@ body {
 .apiForm .form-control {
   margin-bottom: 1em;
 }
-
-.profile {
-  border: 2px #333 solid;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 1em;
+.apiForm .btn-group-wrap {
+  text-align: center;
 }
-.profile .profileImg {
-  border: 1px #333 solid;
-  width: 8em;
-  height: 10em;
+
+.panel {
+  margin: 1em auto;
+}
+.panel .thumbnail {
+  width: 154.21687px;
+  height: 170.66667px;
   float: left;
   margin-right: 1em;
-  background-color: #333333;
 }
-.profile .information {
-  position: relative;
-  display: block;
+.panel .information {
+  line-height: 26px;
 }

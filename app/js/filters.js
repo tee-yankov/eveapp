@@ -7,14 +7,13 @@ angular.module('myApp.filters', []).
 		return function(value) {
 			return String(value).replace(/ /gi, '+');
 		};
+	}).
+	 filter('checkUnique', function(){
+	  	return function(data, storage) {
+	  		for (var index in storage) {
+	  			if(storage[index].characterID == data.characterID)
+	  				return true;
+	  		}
+	  		return false;
+	  	};
 	});
-
-  // filter('find', function(){
-  // 	return function(information, data) {
-  // 		for (var index in data) {
-  // 			if(data[index].characterID == information.characterID)
-  // 				return index;
-  // 		}
-  // 		return -1;
-  // 	};
-  // });

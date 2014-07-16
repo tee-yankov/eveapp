@@ -2,7 +2,7 @@
   <img class="profileImg" ng-src="https://image.eveonline.com/Character/{{info.characterID}}_256.jpg">
   <div class="information">
   	<p><b>Character Name: </b>{{info.name}}</p>
-  	<p><b>Corporation: </b><a ng-href="http://evewho.com/corp/{{corpSearch}}">{{info.corpName}}</a></p>
+  	<p><b>Corporation: </b><a ng-href="http://evewho.com/corp/{{info.corpSearch}}">{{info.corpName}}</a></p>
   	<p><b>Skill Points: </b>{{info.skillPoints | number}} SP</p>
   	<p><b>Current Ship: </b><a ng-href="https://wiki.eveonline.com/en/wiki/{{info.shipTypeName}}">{{info.shipTypeName}}</a> ({{info.shipName}})</p>
     <p><b>Balance: </b>{{info.balance | number}} ISK</p>

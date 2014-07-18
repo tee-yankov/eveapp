@@ -38,7 +38,7 @@ body {
 		top: 0;
 		left: 72px;
 		right: 72px;
-		z-index: 2;
+		z-index: 3;
 		position: fixed;
 		font-size: 16px;
 		line-height: 16px;
@@ -54,6 +54,31 @@ body {
 			font-weight: 300;
 			margin: 0 auto;
 			white-space: nowrap;
+			.site-title {
+				a {
+				transition: 0.25s all cubic-bezier(.39,.12,.5,1);
+				color: #FFF;
+				&:hover {
+					text-decoration: none;
+					color: $dark;
+					}
+				}
+			}
+		}
+		.site-login {
+			font-size: 1.5rem;
+			position: fixed;
+			right: 1rem;
+			z-index: 3;
+			white-space: nowrap;
+			a {
+				transition: 0.25s all cubic-bezier(.39,.12,.5,1);
+				color: #FFF;
+				&:hover {
+					text-decoration: none;
+					color: $dark;
+				}
+			}
 		}
 	}
 }
@@ -83,21 +108,26 @@ body {
 }
 
 
-// .profile {
-// 	border: 2px $dark solid;
-// 	margin-top: 1em;
-// 	margin-bottom: 1em;
-// 	padding: 1em;
-// 	.profileImg {
-// 		border: 1px $dark solid;
-// 		width: 8em;
-// 		height: 10em;
-// 		float: left;
-// 		margin-right: 1em;
-// 		background-color: $dark;
-// 	}
-// 	.information {
-// 		position: relative;
-// 		display: block;
-// 	}
-// }
+// ngAnimate
+.reveal-animation {
+	&.ng-enter {
+	position: relative;
+	transition: all .75s cubic-bezier(.39,.12,.5,1);
+	top: 32px;
+	opacity: 0;
+	&.ng-enter-active {
+		opacity: 1;
+		top: 0;
+		}
+	}
+	&.ng-leave {
+		position: relative;
+		transition: all .75s cubic-bezier(.39,.12,.5,1);
+		top: 0px;
+		opacity: 1;
+		&.ng-leave-active {
+			top: 32px;
+			opacity: 0;
+		}
+	}
+}

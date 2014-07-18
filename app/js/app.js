@@ -8,5 +8,6 @@ angular.module('myApp', [
   'myApp.services',
   'myApp.directives',
   'myApp.controllers',
-  'ngStorage'
+  'ngStorage',
+  'ngAnimate'
 ]);

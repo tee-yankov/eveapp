@@ -1,12 +1,9 @@
-<div class="container panel panel-default reveal-animation" ng-repeat="info in information">
-<div class="panel-body">
-  <img class="thumbnail" ng-src="https://image.eveonline.com/Character/{{info.characterID}}_256.jpg">
+<ul class="list-group">
+<div class="list-group-item reveal-animation" ng-repeat="info in information">
+  <img class="thumbnail" ng-src="https://image.eveonline.com/Character/{{info.characterID}}_64.jpg">
   <div class="information">
   	<p><b>Character Name: </b>{{info.name}}</p>
-  	<p><b>Corporation: </b><a ng-href="http://evewho.com/corp/{{info.corpSearch}}" target="_blank">{{info.corpName}}</a></p>
-  	<p><b>Skill Points: </b>{{info.skillPoints | number}} SP</p>
-  	<p><b>Current Ship: </b><a ng-href="https://wiki.eveonline.com/en/wiki/{{info.shipTypeName}}" target="_blank">{{info.shipTypeName}}</a> ({{info.shipName}})</p>
-    <p><b>Balance: </b>{{info.balance | number}} ISK</p>
+  	<p><b>Corporation: </b><a ng-href="http://evewho.com/corp/{{info.corpSearch}}" target="_blank">{{info.corporationName}}</a></p>
   </div>
 </div>
-</div>
+</ul>

@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic);
 $dark: #333333;
+$clouds: #ecf0f1;
 
 body {
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial;
@@ -60,7 +61,7 @@ body {
 				color: #FFF;
 				&:hover {
 					text-decoration: none;
-					color: $dark;
+					color: $clouds;
 					}
 				}
 			}
@@ -76,7 +77,7 @@ body {
 				color: #FFF;
 				&:hover {
 					text-decoration: none;
-					color: $dark;
+					color: $clouds;
 				}
 			}
 		}
@@ -94,19 +95,23 @@ body {
 	}
 }
 
-.panel {
-	margin: 1em auto;
+.list-group {
+	margin-top: 1em;
+}
+.list-group-item {
+	transition: all .5s cubic-bezier(.39,.12,.5,1);
+	background: #FFF;
+	height: auto;
+	line-height: 30px;
 	.thumbnail {
-		width: 256/1.66 * 1px;
-		height: 256/1.5 * 1px;
 		float: left;
 		margin-right: 1em;
 	}
-	.information {
-		line-height: 26px;
+	&:hover {
+		cursor: pointer;
+		background: $clouds;
 	}
 }
-
 
 // ngAnimate
 .reveal-animation {

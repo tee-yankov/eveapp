@@ -62,7 +62,7 @@ body {
 }
 .nav .nav-wrapper .nav-title .site-title a:hover {
   text-decoration: none;
-  color: #333333;
+  color: #ecf0f1;
 }
 .nav .nav-wrapper .site-login {
   font-size: 1.5rem;
@@ -78,7 +78,7 @@ body {
 }
 .nav .nav-wrapper .site-login a:hover {
   text-decoration: none;
-  color: #333333;
+  color: #ecf0f1;
 }
 
 .apiForm {
@@ -92,17 +92,24 @@ body {
   text-align: center;
 }
 
-.panel {
-  margin: 1em auto;
+.list-group {
+  margin-top: 1em;
 }
-.panel .thumbnail {
-  width: 154.21687px;
-  height: 170.66667px;
+
+.list-group-item {
+  -webkit-transition: all 0.5s cubic-bezier(0.39, 0.12, 0.5, 1);
+          transition: all 0.5s cubic-bezier(0.39, 0.12, 0.5, 1);
+  background: #FFF;
+  height: auto;
+  line-height: 30px;
+}
+.list-group-item .thumbnail {
   float: left;
   margin-right: 1em;
 }
-.panel .information {
-  line-height: 26px;
+.list-group-item:hover {
+  cursor: pointer;
+  background: #ecf0f1;
 }
 
 .reveal-animation.ng-enter {

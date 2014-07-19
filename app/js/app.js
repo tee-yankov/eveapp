@@ -9,5 +9,5 @@ angular.module('myApp', [
   'myApp.directives',
   'myApp.controllers',
   'ngStorage',
-  'ngAnimate'
+  'ngAnimate',
 ]);

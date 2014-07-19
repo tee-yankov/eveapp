@@ -3,6 +3,8 @@
 /* Services */
 
 angular.module('myApp.services', []).
-	service('noService', [function(){
-
+	factory('dataService', ['$resource', function($resource){
+		return $resource('./vendor/3rdpartyeve/phealng/index.php', {}, {
+			query: {method: 'GET', params:{keyId: '', vCode: ''}, isArray:true}
+		});
 	}]);
